@@ -1,0 +1,92 @@
+app-header-plans {
+    mat-toolbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .menu-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .user-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    mat-nav-list {
+        padding: 0
+    }
+
+    mat-sidenav {
+        background-color: red;
+        width: 250px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    li {
+        // width: 200px;
+        // min-height: 68px;
+        margin: 15px 10px;
+        border-radius: 20px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+    li:hover {
+        transition: all 0.2s;
+
+        background-color: #ECECEC;
+
+    }
+
+    li:active {
+        background-color: #DBDBDB;
+    }
+
+    li.selected:active {
+        background-color: #3A6A5F;
+    }
+
+    li.selected {
+        transition: all 0.2s;
+        background-color: #004d40;
+
+
+        a {
+            color: #f5f8ff
+        }
+    }
+
+    a {
+        color: #004d40;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+        padding-left: 15px;
+        // min-width: 150px;
+
+
+        // padding: 10px 15px;
+
+        mat-icon {
+            padding-right: 10px;
+        }
+    }
+
+
+
+
+}

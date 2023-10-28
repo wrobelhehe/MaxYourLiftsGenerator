@@ -1,0 +1,49 @@
+<div class="header-nav-container">
+  <div class="nav-container" [ngStyle]="{ inset: changeStyles() }">
+    <ul class="nav-bar">
+      <li class="nav-item">
+        <a href="#home" class="nav-a" (click)="afterClick()">
+          <span>Home</span></a
+        >
+      </li>
+      <li class="nav-item">
+        <a href="#about" class="nav-a" (click)="afterClick()"
+          ><span>About</span></a
+        >
+      </li>
+      <li class="nav-item">
+        <a href="#faq" class="nav-a" (click)="afterClick()"><span>FAQ</span></a>
+      </li>
+      <!-- <li class="nav-item">
+        <a href="#contact" class="nav-a" (click)="afterClick()"
+          ><span>Contact</span></a
+        >
+      </li> -->
+      <li class="nav-item">
+        <div  class="nav-a" (click)="afterClick();signUp()"
+          ><span>Sign up</span></div
+        >
+      </li>
+      <li class="nav-item">
+        <div  class="nav-a"  (click)="afterClick();login()"
+          ><span>Login</span></div
+        >
+      </li>
+    </ul>
+  </div>
+  <div
+    *ngIf="!isNavMenuOpen"
+    class="nav-close"
+    id="nav-close"
+    (click)="toggleNavMenu()"
+  >
+    <i class="ri-close-line"></i>
+  </div>
+  <div
+    *ngIf="isNavMenuOpen"
+    class="nav-open"
+    (click)="toggleNavMenu()"
+    id="nav-open"
+  >
+  <i class="ri-menu-4-line"></i>  </div>
+</div>

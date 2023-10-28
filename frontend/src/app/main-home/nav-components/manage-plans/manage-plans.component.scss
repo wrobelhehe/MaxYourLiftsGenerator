@@ -1,0 +1,83 @@
+app-manage-plans {
+    .manage-plans {
+        padding: 100px 0;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        min-height: 85vh;
+
+        mat-card {
+            margin-bottom: 50px;
+        }
+
+        .header-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            width: 95%;
+
+            h1 {
+                padding: 0 16px;
+            }
+
+            .add-cat {
+                padding: 0 16px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                span.add {
+                    margin-right: 16px;
+                }
+
+                .float-right {
+                    font-size: 1.2em;
+                }
+            }
+        }
+
+        .filter-card {
+            width: 95%;
+
+            mat-form-field {
+                width: 100%;
+
+            }
+
+        }
+
+        .responsive-table {
+            width: 95%;
+
+            .td {
+                min-height: 80px;
+            }
+
+            mat-paginator {
+                background-color: #FAFAFA;
+            }
+
+
+            .action-td {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+            }
+
+            .action-th {
+                text-align: center;
+            }
+
+        }
+
+    }
+
+
+
+}

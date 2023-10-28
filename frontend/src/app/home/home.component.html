@@ -1,0 +1,174 @@
+<app-header></app-header>
+
+
+<div class="main-container">
+  <app-mid-nav [@inOutAnimation] [section]="section" class="mid-nav" *ngIf="scrolled===1"></app-mid-nav>
+
+
+  <div class="info-container" id="home">
+    <div class="info-wrap">
+      <div class="text-container">
+        <h1>Max Your Lifts</h1>
+        <h2>Application aimed at improving weak links in powerlifting </h2>
+        <div class="buttons-container">
+          <button mat-raised-button class="sign-button" (click)="signUp()">Get Started</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="about-container" id="about">
+    <div class="about-con">
+      <h1>About us</h1>
+      <p>This web application was created for powerlifting environment in mind. Main apply of this application is to create very individual training plan to improve weakest lift of the  powerlifters. </p>
+      <div class="cards">
+        <div class="card">
+          <mat-card>
+           <img mat-card-image src="../../assets/img/managePlans.png" alt="manage plans">
+          </mat-card>
+          <mat-card class="text">
+            <mat-card-header>
+              <mat-card-subtitle>Table with generated plans</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+              <p>This table in manage plans section, stores all of user generated plans. Table got sorted headers and some actions to manage plans.</p>
+              <mat-divider></mat-divider>
+            </mat-card-content>
+            <mat-card-footer>
+              <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+            </mat-card-footer>
+          </mat-card>
+               </div>
+               <div class="card">
+                <mat-card class="text">
+                  <mat-card-header>
+                    <mat-card-subtitle>Form to generate new plan</mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <p>This is part of the form responsible for generating training plans</p>
+                    <mat-divider></mat-divider>
+                  </mat-card-content>
+                  <mat-card-footer>
+                    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+                  </mat-card-footer>
+                </mat-card>
+                <mat-card>
+                  <img mat-card-image src="../../assets/img/plansForm.png" alt="manage plans">
+                 </mat-card>
+                </div>
+                <div class="card">
+                <mat-card>
+                  <img mat-card-image src="../../assets/img/viewPlan.png" alt="manage plans">
+                </mat-card>
+                <mat-card class="text">
+                  <mat-card-header>
+                    <mat-card-subtitle>Plan preview</mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <p>This is a preview of an example generated training plan</p>
+                    <mat-divider></mat-divider>
+                  </mat-card-content>
+                  <mat-card-footer>
+                    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+                  </mat-card-footer>
+                </mat-card>
+                      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-container" id="faq">
+    <div class="section-faq">
+      <h1>Frequently asked questions</h1>
+
+    </div>
+    <div class="container">
+
+      <div class="tab">
+        <input type="radio" name="acc" id="acc1" />
+        <label for="acc1">
+          <h2>01</h2>
+          <h3> How does the training plan generator work?</h3>
+        </label>
+        <div class="content">
+          <p>
+            The training plan generator uses user inputs such as age, bodyweight, bench, deadlift squat and more. Then uses algorithm to compare user results to results of other people and determine which lift is the worst one.The Plan is aimed at the user weakest lift.
+          </p>
+        </div>
+      </div>
+
+      <div class="tab">
+        <input type="radio" name="acc" id="acc2" />
+        <label for="acc2">
+          <h2>02</h2>
+          <h3>How does the app determine which lift is the worst?</h3>
+        </label>
+        <div class="content">
+          <p>
+            The app uses data from the OpenPowerlifting database to compare a user's lift numbers to those of others in their age and weight category. This allows the app to identify which lift may need the most improvement.          </p>
+        </div>
+      </div>
+      <div class="tab">
+        <input type="radio" name="acc" id="acc4" />
+        <label for="acc4">
+          <h2>03</h2>
+          <h3> What is the OpenPowerlifting database? </h3>
+        </label>
+        <div class="content">
+          <p>
+            The OpenPowerlifting database is a comprehensive collection of powerlifting results from various meets and competitions. It is used to provide users with relevant data and comparisons.
+
+            This page uses data from the OpenPowerlifting project, https://www.openpowerlifting.org.
+You may download a copy of the data at https://data.openpowerlifting.org.
+
+          </p>
+        </div>
+      </div>
+      <div class="tab">
+        <input type="radio" name="acc" id="acc5" />
+        <label for="acc5">
+          <h2>04</h2>
+          <h3>Can I use the app if I am new to powerlifting? </h3>
+        </label>
+        <div class="content">
+          <p>
+            Yes, the app is designed to be user-friendly and can be used by both new and experienced powerlifters.        </div>
+      </div>
+      <div class="tab">
+        <input type="radio" name="acc" id="acc6" />
+        <label for="acc6">
+          <h2>05</h2>
+          <h3> How often should I update my lift numbers in the app?</h3>
+        </label>
+        <div class="content">
+          <p>
+            It is recommended that users update their lift numbers in the app after every training cycle or competition to ensure the training plan stays accurate and effective.          </p>
+        </div>
+      </div>
+      <div class="tab">
+        <input type="radio" name="acc" id="acc7" />
+        <label for="acc7">
+          <h2>06</h2>
+          <h3>Can i save generated plan?</h3>
+        </label>
+        <div class="content">
+          <p>
+           Yes, every generated plan is being saved in database, so you will have access to them ever login to the page. Also there is option to export training plan to PDF file.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="contact-container" id="contact">
+    <div class="contact-con">
+      <div class="form-container">
+        <mat-form-field hintLabel="Max 10 characters" appearance="fill">
+          <mat-label>Enter some input</mat-label>
+          <input matInput #input maxlength="10" placeholder="Ex. Nougat">
+          <mat-hint align="end">{{input.value.length}}/10</mat-hint>
+        </mat-form-field>
+      </div>
+    </div>
+  </div> -->
+</div>
+<app-footer></app-footer>
