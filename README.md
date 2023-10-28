@@ -1,6 +1,9 @@
 # 🏋️‍♂️ MaxYourLifts Generator 
 
 ![Main Image](https://drive.google.com/uc?export=view&id=1i1TGSu2pL6ndJGCCOyQsoAR97HPlnHRh)
+![Second_Main Image](https://drive.google.com/uc?export=view&id=19wF0nD_Ft5saiCMR9jzH4SoWnNeB7LoU)
+![Third_Main Image](https://drive.google.com/uc?export=view&id=1mnwBt-t4yCefkEzmgSdPeyUF8zj1kEnx)
+
 
 MaxYourLifts Generator is designed to help those who are passionate about powerlifting to continuously improve and achieve higher strength results. By simply inputting relevant information, the user receives a customized workout plan tailored to their needs.
 
@@ -16,7 +19,7 @@ Create a free account to save and manage your generated plans. Conveniently acce
 
 Based on the information you provide, our generator crafts an optimal plan to maximize your lifts.
 
-![Second_Main Image](https://drive.google.com/uc?export=view&id=19wF0nD_Ft5saiCMR9jzH4SoWnNeB7LoU)
+![Plan Preview](https://drive.google.com/uc?export=view&id=1PikzYmZl9MZ-8hkUaUDNXHgXjT2PuDYH)
 
 ### 📥 Downloadable Plans
 
@@ -29,7 +32,6 @@ Once you're satisfied with the plan, easily download it as a PDF directly from t
 
 For every exercise in your plan, you can view an instructional video ensuring you perform the exercise with proper form and technique.
 
-![Third_Main Image](https://drive.google.com/uc?export=view&id=1mnwBt-t4yCefkEzmgSdPeyUF8zj1kEnx)
 ![Video Preview](https://drive.google.com/uc?export=view&id=1Jlmh5omYJPUP0hwQVFCWMeU7pDqY1nNM)
 
 ## 🔧 Technologies Used 
