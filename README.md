@@ -62,3 +62,18 @@ For every exercise in your plan, you can view an instructional video ensuring yo
 2. **Clone the Repository:**
    ```bash
    git clone https://github.com/YOUR_USERNAME/MaxYourLiftsGenerator.git
+   ```
+3. **Install dependencies:**
+    ```bash
+   cd MaxYourLiftsGenerator
+   npm install
+   cd frontend
+   npm install
+   cd ../backend
+   npm install
+    ```
+3. **Run applications:**
+     In the root directory of the project:
+     ```bash
+    npm run start
+    ```
